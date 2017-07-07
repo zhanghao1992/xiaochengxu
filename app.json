@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/recommend/recommend",
+        "pages/search/search",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "电影APP",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "image/bg1.png",
+                "selectedIconPath": "image/bg1a.png",
+                "text": "影院热映"
+            },
+            {
+                "pagePath": "pages/recommend/recommend",
+                "iconPath": "image/bg2.png",
+                "selectedIconPath": "image/bg2a.png",
+                "text": "即将上映"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "iconPath": "image/bg3.png",
+                "selectedIconPath": "image/bg3a.png",
+                "text": "查询电影"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": false
+}

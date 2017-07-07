@@ -1,0 +1,34 @@
+<template name="list">
+  <view class="list">
+    <view wx:for="{{list.subjects}}" wx:key="{{index}}" data-id="{{item.id}}" class="list-item">
+      <navigator url="../detail/detail?id={{item.id}}">
+        <view class="left">
+          <image wx:if="{{!item.images.large}}" src="../../image/bg1.png"></image>
+          <image wx:else src="{{item.images.large}}"></image>
+        </view>
+        <view class="right">
+          <view>
+            <text>名称：</text>
+            <text>{{item.title}}</text>
+          </view>
+          <view>
+            <text>导演：</text>
+            <text wx:for="{{item.directors}}" wx:key="{{index}}">{{item.name}}</text>
+          </view>
+          <view>
+            <text>主演：</text>
+            <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}}</text>
+          </view>
+          <view>
+            <text>类型： </text>
+            <text wx:for="{{item.genres}}" wx:key="{{index}}">{{item}} /</text>
+          </view>
+          <view>
+            <text>上映年份：</text>
+            <text>{{item.year}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

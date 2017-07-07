@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+
+<view class="search">
+<input type="text" plplaceholder="请输入关键词搜所电影" bindinput="inputHandle" />
+<button bindtap="searchHandle">搜索</button>
+</view>
+
+<import src="../templates/list/list"/>
+<template is="list" data="{{list}}"></template>

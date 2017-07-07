@@ -1,0 +1,39 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  background: #444;
+  font-family: 微软雅黑;
+  font-size: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item navigator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.list-item image {
+  width: 230rpx;
+  height: 300rpx;
+}
+
+.list-item .left {
+  width: 240rpx;
+}
+
+.list-item .right {
+  width: 450rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item .right text {
+  line-height: 50rpx;
+  color: #fff;
+}

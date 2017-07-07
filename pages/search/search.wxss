@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 3%;
+}
+.search input{
+    background: #fff;
+    width: 60%;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 6rpx;
+    padding-left: 1em;
+}
+
+.search button{
+    width: 30%;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: sandybrown;
+    font-size: 30rpx;
+}
+
+
+

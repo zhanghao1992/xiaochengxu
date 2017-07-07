@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="600" circular="true">
+  <swiper-item>
+    <image src="../../image/banner.png" class="slide-image" mode="scaleToFill" />
+  </swiper-item>
+  <swiper-item>
+    <image src="../../image/banner.png" class="slide-image" />
+  </swiper-item>
+  <swiper-item>
+    <image src="../../image/banner.png" class="slide-image" />
+  </swiper-item>
+</swiper>
+
+<import src="../templates/list/list"/>
+<template is="list" data="{{list}}"></template>
